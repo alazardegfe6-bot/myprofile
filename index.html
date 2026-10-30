@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>የእኔ ድረ-ገጽ</title>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #f4f6f8;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1e88e5;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    section {
+      background: white;
+      max-width: 600px;
+      margin: 16px auto;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    h2 {
+      color: #1e88e5;
+      margin-top: 0;
+    }
+
+    a {
+      display: inline-block;
+      background: #1e88e5;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+    }
+          button {
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    body.dark {
+      background: #121212;
+      color: #eee;
+    }
+
+    body.dark section {
+      background: #1e1e1e;
+    }
+
+    body.dark footer {
+      color: #aaa;
+    }
+    
+  </style>
+  </head>
+<body>
+
+  <header>
+    <h1>ሰላም! ስሜ ______ ነው</h1>
+    <button id="themeBtn">🌙 ጨለማ ሞድ</button>
+    <p>ወደፊት Web Developer</p>
+  </header>
+
+  <section id="about">
+    <h2>ስለ እኔ</h2>
+    <p>እኔ ______ ነኝ። ድረ-ገጽ መስራት እየተማርኩ ነው።</p>
+  </section>
+
+  <section id="skills">
+    <h2>ክህሎቶቼ</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS (እየተማርኩ)</li>
+      <li>JavaScript (በቅርቡ)</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>አድራሻ</h2>
+    <p>ስልክ: 09________</p>
+    <a href="https://t.me/______">Telegram ላይ አግኙኝ</a>
+  </section>
+
+  <footer>
+    <p>© 2026 ድረ-ገጼ</p>
+  </footer>
+
+<script>
+  const btn = document.getElementById("themeBtn");
+
+  btn.addEventListener("click", function () {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+      btn.textContent = "☀️ ብሩህ ሞድ";
+    } else {
+      btn.textContent = "🌙 ጨለማ ሞድ";
+    }
+  });
+</script>
+
+</body>
+</html>
